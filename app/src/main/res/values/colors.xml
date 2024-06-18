@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="your_primary_color">#FF6200EE</color>
+    <color name="your_primary_variant_color">#FF3700B3</color>
+    <color name="your_on_primary_color">#FFFFFF</color>
+    <color name="your_secondary_color">#FF03DAC5</color>
+    <color name="your_secondary_variant_color">#FF018786</color>
+    <color name="your_on_secondary_color">#FF000000</color>
+    <color name="your_window_background_color">#FFFFFFFF</color>
+    <color name="your_custom_color">#FFBB86FC</color>
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/id_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID Number" />
+
+            <EditText
+                android:id="@+id/customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Customer Name" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address" />
+
+            <EditText
+                android:id="@+id/home_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Home Number" />
+
+            <EditText
+                android:id="@+id/customer_phones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Customer Phones" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/sim_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="SIM Number" />
+
+            <RadioButton
+                android:id="@+id/sim_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIM Delivery" />
+
+            <RadioButton
+                android:id="@+id/e_sim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="eSIM" />
+
+            <EditText
+                android:id="@+id/mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number" />
+
+            <EditText
+                android:id="@+id/new_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="New Number" />
+
+            <CheckBox
+                android:id="@+id/automatic_verification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Automatic Verification" />
+
+            <EditText
+                android:id="@+id/credit_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Credit Card" />
+
+            <EditText
+                android:id="@+id/expiry_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Expiry Month" />
+
+            <EditText
+                android:id="@+id/expiry_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Expiry Year" />
+
+            <EditText
+                android:id="@+id/cvv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CVV" />
+
+            <EditText
+                android:id="@+id/notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Notes" />
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/remove_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remove" />
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+
+            <Button
+                android:id="@+id/export_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Export" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

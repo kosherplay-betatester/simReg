@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="title">שלח אקטוב</string>
+    <string name="id_number">תעודת זהות</string>
+    <string name="customer_name">שם לקוח</string>
+    <string name="city">עיר</string>
+    <string name="address">כתובת</string>
+    <string name="home_number">מספר בית</string>
+    <string name="customer_phones">טלפונים של הלקוח</string>
+    <string name="email">אימייל לשליחת חוזה</string>
+    <string name="route1">מסלול 1</string>
+    <string name="sim_number">מספר סים</string>
+    <string name="sim_delivery">סים בשליחות</string>
+    <string name="e_sim">אי סים</string>
+    <string name="mobile_number">מספר לנייד</string>
+    <string name="new_number">מספר חדש</string>
+    <string name="automatic_verification">שליחת שירות אישור ניוד אוטומטית</string>
+    <string name="add_button">הוסף</string>
+    <string name="remove_button">הסר</string>
+    <string name="submit_button">שלח</string>
+    <string name="credit_card">כרטיס אשראי</string>
+    <string name="expiry_month">חודש</string>
+    <string name="expiry_year">שנה</string>
+    <string name="cvv">סיוי</string>
+    <string name="notes">הערות</string>
+    <string name="export_button">ייצוא לאקסל</string>
+    <string name="form_submitted">Form Submitted</string>
+    <string name="export_successful">Data exported to Excel successfully!</string>
+    <string name="export_failed">Failed to export data</string>
+    <string name="request_permission">Please grant storage permission</string>
+</resources>

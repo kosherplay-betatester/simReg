@@ -1,0 +1,9 @@
+<resources>
+    <!-- Define any additional styles here -->
+    <!-- For example, you can add custom button styles, text appearances, etc. -->
+
+    <!-- Example custom style -->
+    <style name="CustomButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/your_custom_color</item>
+    </style>
+</resources>
