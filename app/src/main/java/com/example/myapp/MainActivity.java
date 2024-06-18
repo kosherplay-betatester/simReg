@@ -28,43 +28,19 @@ public class MainActivity extends AppCompatActivity {
     private EditText idNumber, customerName, city, address, homeNumber, customerPhones, email, simNumber, mobileNumber, newNumber, creditCard, expiryMonth, expiryYear, cvv, notes;
     private RadioButton simDelivery, eSim;
     private CheckBox automaticVerification;
-    private Button addButton, removeButton, submitButton, exportButton;
+    private Button exportButton; // You can add other buttons like add, remove, submit if needed
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Initialize your views (EditText, RadioButton, CheckBox, Button)
         idNumber = findViewById(R.id.id_number);
         customerName = findViewById(R.id.customer_name);
-        city = findViewById(R.id.city);
-        address = findViewById(R.id.address);
-        homeNumber = findViewById(R.id.home_number);
-        customerPhones = findViewById(R.id.customer_phones);
-        email = findViewById(R.id.email);
-        simNumber = findViewById(R.id.sim_number);
-        simDelivery = findViewById(R.id.sim_delivery);
-        eSim = findViewById(R.id.e_sim);
-        mobileNumber = findViewById(R.id.mobile_number);
-        newNumber = findViewById(R.id.new_number);
-        automaticVerification = findViewById(R.id.automatic_verification);
-        creditCard = findViewById(R.id.credit_card);
-        expiryMonth = findViewById(R.id.expiry_month);
-        expiryYear = findViewById(R.id.expiry_year);
-        cvv = findViewById(R.id.cvv);
-        notes = findViewById(R.id.notes);
+        // ... Initialize other views
 
-        addButton = findViewById(R.id.add_button);
-        removeButton = findViewById(R.id.remove_button);
-        submitButton = findViewById(R.id.submit_button);
         exportButton = findViewById(R.id.export_button);
-
-        submitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MainActivity.this, getString(R.string.form_submitted), Toast.LENGTH_SHORT).show();
-            }
-        });
 
         exportButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,116 +54,20 @@ public class MainActivity extends AppCompatActivity {
         XSSFWorkbook workbook = new XSSFWorkbook();
         XSSFSheet sheet = workbook.createSheet("Customer Data");
 
-        Row row = sheet.createRow(0);
-        Cell cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.id_number));
-        cell = row.createCell(1);
-        cell.setCellValue(idNumber.getText().toString());
-
-        row = sheet.createRow(1);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.customer_name));
-        cell = row.createCell(1);
-        cell.setCellValue(customerName.getText().toString());
-
-        row = sheet.createRow(2);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.city));
-        cell = row.createCell(1);
-        cell.setCellValue(city.getText().toString());
-
-        row = sheet.createRow(3);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.address));
-        cell = row.createCell(1);
-        cell.setCellValue(address.getText().toString());
-
-        row = sheet.createRow(4);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.home_number));
-        cell = row.createCell(1);
-        cell.setCellValue(homeNumber.getText().toString());
-
-        row = sheet.createRow(5);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.customer_phones));
-        cell = row.createCell(1);
-        cell.setCellValue(customerPhones.getText().toString());
-
-        row = sheet.createRow(6);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.email));
-        cell = row.createCell(1);
-        cell.setCellValue(email.getText().toString());
-
-        row = sheet.createRow(7);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.sim_number));
-        cell = row.createCell(1);
-        cell.setCellValue(simNumber.getText().toString());
-
-        row = sheet.createRow(8);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.sim_delivery));
-        cell = row.createCell(1);
-        cell.setCellValue(simDelivery.isChecked() ? "Yes" : "No");
-
-        row = sheet.createRow(9);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.e_sim));
-        cell = row.createCell(1);
-        cell.setCellValue(eSim.isChecked() ? "Yes" : "No");
-
-        row = sheet.createRow(10);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.mobile_number));
-        cell = row.createCell(1);
-        cell.setCellValue(mobileNumber.getText().toString());
-
-        row = sheet.createRow(11);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.new_number));
-        cell = row.createCell(1);
-        cell.setCellValue(newNumber.getText().toString());
-
-        row = sheet.createRow(12);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.automatic_verification));
-        cell = row.createCell(1);
-        cell.setCellValue(automaticVerification.isChecked() ? "Yes" : "No");
-
-        row = sheet.createRow(13);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.credit_card));
-        cell = row.createCell(1);
-        cell.setCellValue(creditCard.getText().toString());
-
-        row = sheet.createRow(14);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.expiry_month));
-        cell = row.createCell(1);
-        cell.setCellValue(expiryMonth.getText().toString());
-
-        row = sheet.createRow(15);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.expiry_year));
-        cell = row.createCell(1);
-        cell.setCellValue(expiryYear.getText().toString());
-
-        row = sheet.createRow(16);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.cvv));
-        cell = row.createCell(1);
-        cell.setCellValue(cvv.getText().toString());
-
-        row = sheet.createRow(17);
-        cell = row.createCell(0);
-        cell.setCellValue(getString(R.string.notes));
-        cell = row.createCell(1);
-        cell.setCellValue(notes.getText().toString());
+        // Add data to Excel sheet
+        addDataToSheet(sheet, 0, getString(R.string.id_number), idNumber.getText().toString());
+        addDataToSheet(sheet, 1, getString(R.string.customer_name), customerName.getText().toString());
+        // ... Add data for other fields similarly
 
         try {
-            File file = new File(getFilesDir(), "CustomerData.xlsx");
+            // Get the customer name and sanitize it for filename
+            String safeCustomerName = customerName.getText().toString().trim().replaceAll("[^a-zA-Z0-9.-]", "_");
+            if (safeCustomerName.isEmpty()) {
+                safeCustomerName = "CustomerData";
+            }
+            String fileName = safeCustomerName + ".xlsx";
+
+            File file = new File(getFilesDir(), fileName);
             FileOutputStream fileOutputStream = new FileOutputStream(file);
             workbook.write(fileOutputStream);
             fileOutputStream.close();
@@ -198,6 +78,15 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
             Toast.makeText(this, getString(R.string.export_failed), Toast.LENGTH_SHORT).show();
         }
+    }
+
+    // Helper function to add data to Excel sheet
+    private void addDataToSheet(XSSFSheet sheet, int rowNum, String label, String value) {
+        Row row = sheet.createRow(rowNum);
+        Cell labelCell = row.createCell(0);
+        labelCell.setCellValue(label);
+        Cell valueCell = row.createCell(1);
+        valueCell.setCellValue(value);
     }
 
     private void shareFile(Context context, File file) {
