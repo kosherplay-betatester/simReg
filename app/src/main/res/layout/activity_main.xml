@@ -20,133 +20,133 @@
                 android:id="@+id/id_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="ID Number" />
+                android:hint="@string/id_number" />
 
             <EditText
                 android:id="@+id/customer_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Customer Name" />
+                android:hint="@string/customer_name" />
 
             <EditText
                 android:id="@+id/city"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="City" />
+                android:hint="@string/city" />
 
             <EditText
                 android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Address" />
+                android:hint="@string/address" />
 
             <EditText
                 android:id="@+id/home_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Home Number" />
+                android:hint="@string/home_number" />
 
             <EditText
                 android:id="@+id/customer_phones"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Customer Phones" />
+                android:hint="@string/customer_phones" />
 
             <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email" />
+                android:hint="@string/email" />
 
             <EditText
                 android:id="@+id/sim_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="SIM Number" />
+                android:hint="@string/sim_number" />
 
             <RadioButton
                 android:id="@+id/sim_delivery"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SIM Delivery" />
+                android:text="@string/sim_delivery" />
 
             <RadioButton
                 android:id="@+id/e_sim"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="eSIM" />
+                android:text="@string/e_sim" />
 
             <EditText
                 android:id="@+id/mobile_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Mobile Number" />
+                android:hint="@string/mobile_number" />
 
             <EditText
                 android:id="@+id/new_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="New Number" />
+                android:hint="@string/new_number" />
 
             <CheckBox
                 android:id="@+id/automatic_verification"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Automatic Verification" />
+                android:text="@string/automatic_verification" />
 
             <EditText
                 android:id="@+id/credit_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Credit Card" />
+                android:hint="@string/credit_card" />
 
             <EditText
                 android:id="@+id/expiry_month"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Expiry Month" />
+                android:hint="@string/expiry_month" />
 
             <EditText
                 android:id="@+id/expiry_year"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Expiry Year" />
+                android:hint="@string/expiry_year" />
 
             <EditText
                 android:id="@+id/cvv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="CVV" />
+                android:hint="@string/cvv" />
 
             <EditText
                 android:id="@+id/notes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Notes" />
+                android:hint="@string/notes" />
 
             <Button
                 android:id="@+id/add_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Add" />
+                android:text="@string/add_button" />
 
             <Button
                 android:id="@+id/remove_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Remove" />
+                android:text="@string/remove_button" />
 
             <Button
                 android:id="@+id/submit_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Submit" />
+                android:text="@string/submit_button" />
 
             <Button
                 android:id="@+id/export_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Export" />
+                android:text="@string/export_button" />
 
         </LinearLayout>
     </ScrollView>

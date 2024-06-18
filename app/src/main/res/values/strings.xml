@@ -24,8 +24,8 @@
     <string name="cvv">סיוי</string>
     <string name="notes">הערות</string>
     <string name="export_button">ייצוא לאקסל</string>
-    <string name="form_submitted">Form Submitted</string>
-    <string name="export_successful">Data exported to Excel successfully!</string>
-    <string name="export_failed">Failed to export data</string>
-    <string name="request_permission">Please grant storage permission</string>
+    <string name="form_submitted">טופס נשלח</string>
+    <string name="export_successful">הנתונים יוצאו לאקסל בהצלחה!</string>
+    <string name="export_failed">נכשל ביצוא נתונים</string>
+    <string name="request_permission">אנא הענק הרשאת אחסון</string>
 </resources>
