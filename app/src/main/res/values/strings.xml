@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">MyApp</string>
+    <string name="app_name">AP Mobile</string>
+
     <string name="title">שלח אקטוב</string>
     <string name="id_number">תעודת זהות</string>
     <string name="customer_name">שם לקוח</string>
@@ -14,7 +15,7 @@
     <string name="e_sim">אי סים</string>
     <string name="mobile_number">מספר לנייד</string>
     <string name="new_number">מספר חדש</string>
-    <string name="automatic_verification">שליחת שירות אישור ניוד אוטומטית</string>
+    <string name="automatic_verification">מספר חדש</string>
     <string name="add_button">הוסף</string>
     <string name="remove_button">הסר</string>
     <string name="submit_button">שלח</string>

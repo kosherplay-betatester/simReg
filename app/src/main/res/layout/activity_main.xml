@@ -82,12 +82,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/mobile_number" />
 
-            <EditText
-                android:id="@+id/new_number"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/new_number" />
-
+           
             <CheckBox
                 android:id="@+id/automatic_verification"
                 android:layout_width="match_parent"
