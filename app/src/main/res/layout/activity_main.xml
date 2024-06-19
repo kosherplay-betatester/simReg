@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:padding="1dp"
+    android:background="@color/background_color"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -14,117 +15,206 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="4dp"
+
+            android:layout_margin="8dp"
+            android:elevation="2dp"
+            android:background="@drawable/layout_background">
 
             <EditText
                 android:id="@+id/id_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/id_number" />
+                android:hint="@string/id_number"
+                android:textColor="@color/on_surface_color"
+                android:backgroundTint="@color/primary_color"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"/>
 
             <EditText
                 android:id="@+id/customer_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/customer_name" />
+                android:hint="@string/customer_name"
+                android:textColor="@color/on_surface_color"
+                android:backgroundTint="@color/primary_color"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"/>
 
             <EditText
                 android:id="@+id/city"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/city" />
+                android:hint="@string/city"
+                android:textColor="@color/on_surface_color"
+                android:backgroundTint="@color/primary_color"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"/>
 
             <EditText
                 android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/address" />
+                android:hint="@string/address"
+                android:textColor="@color/on_surface_color"
+                android:backgroundTint="@color/primary_color"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"/>
 
             <EditText
                 android:id="@+id/home_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/home_number" />
+                android:hint="@string/home_number"
+                android:textColor="@color/on_surface_color"
+                android:backgroundTint="@color/primary_color"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"/>
 
             <EditText
                 android:id="@+id/customer_phones"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/customer_phones" />
+                android:hint="@string/customer_phones"
+                android:textColor="@color/on_surface_color"
+                android:backgroundTint="@color/primary_color"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"/>
 
             <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/email" />
+                android:hint="@string/email"
+                android:textColor="@color/on_surface_color"
+                android:backgroundTint="@color/primary_color"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"/>
 
             <EditText
                 android:id="@+id/sim_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/sim_number" />
+                android:hint="@string/sim_number"
+                android:textColor="@color/on_surface_color"
+                android:backgroundTint="@color/primary_color"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"/>
 
             <RadioButton
                 android:id="@+id/sim_delivery"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sim_delivery" />
+                android:text="@string/sim_delivery"
+                android:textColor="@color/on_surface_color"
+                android:buttonTint="@color/secondary_color"
+                android:layout_marginBottom="12dp" />
 
             <RadioButton
                 android:id="@+id/e_sim"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/e_sim" />
+                android:text="@string/e_sim"
+                android:textColor="@color/on_surface_color"
+                android:buttonTint="@color/secondary_color"
+                android:layout_marginBottom="12dp" />
 
             <EditText
                 android:id="@+id/mobile_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/mobile_number" />
+                android:hint="@string/mobile_number"
+                android:textColor="@color/on_surface_color"
+                android:backgroundTint="@color/primary_color"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"/>
 
-           
             <CheckBox
                 android:id="@+id/automatic_verification"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/automatic_verification" />
+                android:text="@string/automatic_verification"
+                android:textColor="@color/on_surface_color"
+                android:buttonTint="@color/secondary_color"
+                android:layout_marginBottom="12dp" />
 
             <EditText
                 android:id="@+id/credit_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/credit_card" />
+                android:hint="@string/credit_card"
+                android:textColor="@color/on_surface_color"
+                android:backgroundTint="@color/primary_color"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"/>
 
             <EditText
                 android:id="@+id/expiry_month"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/expiry_month" />
+                android:hint="@string/expiry_month"
+                android:textColor="@color/on_surface_color"
+                android:backgroundTint="@color/primary_color"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"/>
 
             <EditText
                 android:id="@+id/expiry_year"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/expiry_year" />
+                android:hint="@string/expiry_year"
+                android:textColor="@color/on_surface_color"
+                android:backgroundTint="@color/primary_color"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"/>
 
             <EditText
                 android:id="@+id/cvv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/cvv" />
+                android:hint="@string/cvv"
+                android:textColor="@color/on_surface_color"
+                android:backgroundTint="@color/primary_color"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"/>
 
             <EditText
                 android:id="@+id/notes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/notes" />
-
+                android:hint="@string/notes"
+                android:textColor="@color/on_surface_color"
+                android:backgroundTint="@color/primary_color"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"/>
 
             <Button
                 android:id="@+id/export_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/export_button" />
+                android:text="@string/export_button"
+                android:backgroundTint="@color/primary_color"
+                android:textColor="@color/on_primary_color"
+                android:padding="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_background"
+                android:elevation="4dp"/>
 
         </LinearLayout>
     </ScrollView>
